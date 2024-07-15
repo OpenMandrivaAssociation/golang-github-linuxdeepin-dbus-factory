@@ -13,6 +13,9 @@ License:        GPLv3
 URL:            %{gourl}
 Source0:        https://github.com/linuxdeepin/go-dbus-factory/archive/refs/tags/%{version}/go-dbus-factory-%{version}.tar.gz
 
+BuildRequires:  golang-deepin-go-lib
+BuildRequires:  golang(github.com/godbus/dbus)
+
 %description
 %{summary}.
 
