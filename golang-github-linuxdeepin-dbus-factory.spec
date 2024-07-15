@@ -40,7 +40,7 @@ building other packages which use import path with
 %make_install PREFIX=%{_prefix}
 
 
-%files devel -f devel.file-list
+%files
 %doc README.md
 
 %changelog
