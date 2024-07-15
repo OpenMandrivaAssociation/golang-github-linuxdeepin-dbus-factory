@@ -42,6 +42,7 @@ building other packages which use import path with
 
 %files
 %doc README.md
+%{_datadir}/gocode/src/github.com/linuxdeepin/go-dbus-factory/
 
 %changelog
 * Thu Nov 29 2018 mosquito <sensor.wen@gmail.com> - 0.1.0-1.20181129git19d6db1
