@@ -3,17 +3,15 @@
 %bcond_with check
 
 %global goipath github.com/linuxdeepin/go-dbus-factory
-%global commit  19d6db11eb8e18c365b0abe45a63baca5ddcc35e
 
-%gometa
 
 Name:           %{goname}
-Version:        0.1.0
-Release:        1%{?dist}
+Version:        2.0.8
+Release:        1
 Summary:        GO DBus factory for Deepin Desktop Environment
 License:        GPLv3
 URL:            %{gourl}
-Source0:        %{gosource}
+Source0:        https://github.com/linuxdeepin/go-dbus-factory/archive/refs/tags/%{version}/go-dbus-factory-%{version}.tar.gz
 
 %description
 %{summary}.
@@ -30,15 +28,14 @@ building other packages which use import path with
 %{goipath} prefix.
 
 %prep
-%forgeautosetup
+%autosetup -n go-dbus-factory-%{version} -p1
+
+%build
+%make_build
 
 %install
-%goinstall
+%make_install PREFIX=%{_prefix}
 
-%if %{with check}
-%check
-%gochecks
-%endif
 
 %files devel -f devel.file-list
 %doc README.md
