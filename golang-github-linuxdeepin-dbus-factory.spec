@@ -5,9 +5,9 @@
 %global goipath github.com/linuxdeepin/go-dbus-factory
 
 
-Name:           %{goname}
+Name:           golang-github-linuxdeepin-dbus-factory
 Version:        2.0.8
-Release:        1
+Release:        2
 Summary:        GO DBus factory for Deepin Desktop Environment
 License:        GPLv3
 URL:            %{gourl}
@@ -15,6 +15,8 @@ Source0:        https://github.com/linuxdeepin/go-dbus-factory/archive/refs/tags
 
 BuildRequires:  golang-deepin-go-lib
 BuildRequires:  golang(github.com/godbus/dbus)
+
+Obsoletes:  	%{goname} = 2.0.8
 
 %description
 %{summary}.
