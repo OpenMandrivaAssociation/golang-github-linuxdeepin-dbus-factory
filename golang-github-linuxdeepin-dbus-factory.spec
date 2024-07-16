@@ -16,8 +16,6 @@ Source0:        https://github.com/linuxdeepin/go-dbus-factory/archive/refs/tags
 BuildRequires:  golang-deepin-go-lib
 BuildRequires:  golang(github.com/godbus/dbus)
 
-Obsoletes:  	%{goname} = 2.0.8
-
 %description
 %{summary}.
 
