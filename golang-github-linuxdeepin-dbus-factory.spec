@@ -8,7 +8,7 @@
 
 
 Name:           golang-github-linuxdeepin-dbus-factory
-Version:        2.0.9
+Version:        2.0.11
 Release:        1
 Summary:        GO DBus factory for Deepin Desktop Environment
 License:        GPLv3
